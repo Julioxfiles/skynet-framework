@@ -1,79 +1,141 @@
-<<<<<<< HEAD
+Here is a **clean Markdown README section** you can use for **`skynet-framework`**. It includes:
 
-## Skynet Framework – Project Description
+* short description
+* Composer installation
+* project creation (UI / API)
 
-**Skynet** is a minimalist PHP framework inspired by the elegance and developer experience of Laravel, designed to build both **UI applications** and **RESTful APIs** with a clean and modular architecture.
+---
 
-The goal of Skynet is to provide a **lightweight, transparent, and extensible foundation** that gives developers full control over their application structure while maintaining modern development practices.
+````markdown
+# Skynet Framework
 
-Unlike large monolithic frameworks, Skynet focuses on **simplicity, clarity, and architectural freedom**.
+**Skynet Framework** is a minimalist PHP framework inspired by Laravel, designed to build **UI applications and REST APIs** using modern architectural patterns such as **MVC, Clean Architecture, Hexagonal Architecture, and Onion Architecture**.
 
-### Key Characteristics
+The framework focuses on **simplicity, transparency, and architectural flexibility**, providing a lightweight core that allows developers to structure applications according to their preferred design principles.
 
-* **Minimal Core**
-  Skynet provides only the essential components required to run an application: routing, request/response handling, controllers, and dependency-friendly structure.
+Skynet is ideal for:
 
-* **Multiple Project Types**
-  Skynet supports different types of applications:
+- REST API development
+- UI applications
+- microservices
+- learning modern software architecture in PHP
 
-  * **UI applications** with views and templates
-  * **API-only services**
-  * **Microservices**
+---
 
-* **MVC Architecture**
-  The framework follows a familiar **Model–View–Controller structure**, making it easy for developers coming from Laravel or other MVC frameworks.
+# Installation
 
-* **Architecture Flexibility**
-  Skynet is designed to support modern architectural styles, including:
+Skynet can be installed using **Composer**.
 
-  * **Clean Architecture**
-  * **Hexagonal Architecture (Ports and Adapters)**
-  * **Onion Architecture**
-  * Traditional **Layered Architecture**
+```bash
+composer create-project julioxfiles/skynet-framework my-project
+````
 
-  This allows developers to organize their code according to domain-driven and scalable design principles.
+This command downloads the framework and creates a new project.
 
-* **Separation Between UI and API**
-  Projects can be split into:
+---
 
-  * **UI layer** (frontend controllers, views, helpers)
-  * **API layer** (application logic and domain)
+# Creating Projects
 
-  This encourages better separation of concerns and easier scaling.
+Skynet supports different project types.
 
-* **Developer-Oriented Design**
-  Skynet emphasizes:
+## Create a UI Application
 
-  * readable code
-  * predictable structure
-  * minimal magic
-  * explicit configuration
+```bash
+composer create-project julioxfiles/skynet-framework my-ui-app
+```
 
-### Design Philosophy
+This creates a project designed for:
 
-Skynet follows a **"simple core, powerful architecture"** philosophy.
-Instead of hiding complexity behind heavy abstractions, it provides a **clean foundation** that allows developers to implement robust architectures themselves.
+* server-rendered views
+* controllers
+* template rendering
+* traditional MVC applications
 
-This makes Skynet ideal for:
+Typical structure:
 
-* Learning software architecture
-* Building maintainable backend systems
-* Creating scalable APIs
-* Structuring domain-driven applications
+```
+my-ui-app
+ ├── app
+ │   ├── Controllers
+ │   ├── Models
+ │   └── Views
+ ├── routes
+ ├── public
+ └── config
+```
 
-### Inspiration
+---
 
-Skynet takes inspiration from:
+## Create an API Application
 
-* **Laravel** (developer experience and routing style)
-* **Clean Architecture principles**
-* **Modern backend frameworks**
+```bash
+composer create-project julioxfiles/skynet-framework my-api
+```
 
-while keeping the framework **small, understandable, and fully customizable**.
+This creates an **API-first project** designed for:
 
+* REST APIs
+* JSON responses
+* microservices
+* frontend separation (React, Vue, etc.)
 
+Typical structure:
 
-=======
-# skynet-framework
-Skynet is a minimalist PHP framework inspired by the elegance and developer experience of Laravel, designed to build both UI applications and RESTful APIs with a clean and modular architecture.
->>>>>>> 206970fd0c429b5ff49e0a52892f6f781297b94a
+```
+my-api
+ ├── app
+ │   ├── Controllers
+ │   ├── Services
+ │   ├── Domain
+ │   └── Infrastructure
+ ├── routes
+ ├── public
+ └── config
+```
+
+---
+
+# Philosophy
+
+Skynet follows a **minimal core philosophy**:
+
+* simple routing
+* clear request/response lifecycle
+* explicit architecture
+* minimal magic
+
+Developers are free to organize their applications using:
+
+* MVC
+* Clean Architecture
+* Hexagonal Architecture
+* Onion Architecture
+* Layered Architecture
+
+---
+
+# Requirements
+
+* PHP 8.2+
+* Composer
+
+---
+
+# License
+
+MIT License
+
+```
+
+---
+
+If you want, I can also help you create a **much more professional README like Laravel's**, including:
+
+- 🚀 Features section  
+- 📦 Folder structure explained  
+- ⚡ Quick start  
+- 🔐 Middleware example  
+- 🧠 Architecture explanation  
+
+It will make **your GitHub project look like a real framework**.
+```
